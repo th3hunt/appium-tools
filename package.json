@@ -4,7 +4,8 @@
   "description": "Appium dependencies and tools",
   "scripts": {
     "postinstall": "npm dedupe",
-    "build": "ln -s ./.bin/appium /usr/local/bin/appium"
+    "build": "ln -s `pwd`/node_modules/.bin/appium /usr/local/bin/appium",
+    "clean": "rm -rf ./node_modules"
   },
   "author": "Stratos Pavlakis",
   "license": "MIT",
